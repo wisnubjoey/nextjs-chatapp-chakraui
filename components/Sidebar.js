@@ -46,7 +46,7 @@ const Sidebar = () => {
 }
 
   return (
-    <Flex bg="blue.100" w="300px" h="100vh" borderEnd="5px solid" borderColor="gray.200" direction="column">
+    <Flex bg="yellow.300" w="300px" h="100vh" borderEnd="5px solid" borderColor="gray.200" direction="column">
 
     <Flex align="center" bg="gray.200" h="80px" w="100%" justifyContent="space-between" p={3} borderBottom="5px solid" borderColor="red.200">
         
