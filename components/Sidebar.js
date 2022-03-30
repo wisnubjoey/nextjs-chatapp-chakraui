@@ -2,7 +2,7 @@ import { Flex, Text } from '@chakra-ui/layout'
 import { Avatar } from '@chakra-ui/avatar'
 import { IconButton } from '@chakra-ui/button'
 import { DragHandleIcon } from '@chakra-ui/icons'
-import { Button, Progress } from '@chakra-ui/react'
+import { Button, Progress, Alert, AlertTitle, AlertDescription, AlertIcon } from '@chakra-ui/react'
 import { signOut } from "firebase/auth";
 import { auth } from '../firebaseconfig'
 import { useAuthState } from 'react-firebase-hooks/auth';
@@ -59,6 +59,17 @@ const Sidebar = () => {
     </Flex>
 
     <Button m={5} p={4} onClick={() => newChat()}>Tambah Teman Berbicara</Button>
+    <Alert status='success'
+  variant='subtle'
+  flexDirection='column'
+  alignItems='center'
+  justifyContent='center'
+  textAlign='center'
+  height='120px'>
+    <AlertIcon />
+      <AlertTitle>Bjoey Chat App</AlertTitle>
+      <AlertDescription as='samp'>This Website Was Created By : Bjoey</AlertDescription>
+    </Alert>
 
     <Flex overflowX="hidden" direction="column" sx={{'&::-webkit-scrollbar': {
       width: '16px',
