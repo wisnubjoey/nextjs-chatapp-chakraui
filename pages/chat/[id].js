@@ -82,7 +82,7 @@ const Chat = () => {
         </Head>
         <Sidebar />
 
-        <Flex bg="black" flex={1} direction="column">
+        <Flex bg="white" flex={1} direction="column">
             <Topbar email={getOtherEmail(chat?.users, user)} />
         <Flex flex={1} direction="column" pt={4} mx={5} overflowX="hidden" sx={{'&::-webkit-scrollbar': {
       width: '16px',
